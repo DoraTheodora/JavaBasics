@@ -72,4 +72,4 @@ class MyStack
             else
                 System.out.println("The Stack is not full nor empty.");
         }
-}
+}   
