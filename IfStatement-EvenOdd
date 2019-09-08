@@ -1,0 +1,19 @@
+/* Write a program which deteminates if a number is odd or even */
+ 
+import java.util.Scanner;  // Import the Scanner class for input
+public class OddEven {
+    public static void main (String[] args)
+    {
+        Scanner number = new Scanner(System.in);
+        System.out.print("Enter number: "); // user's input
+        int theNumber = number.nextInt();
+        
+        if(theNumber%2==0) // if by divinding by 2, there is no reminder, the number is even
+            System.out.println("The number is even!");
+        else
+            System.out.println("The number is odd!");
+        
+        
+    }
+
+}
