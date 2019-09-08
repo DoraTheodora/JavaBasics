@@ -1,0 +1,26 @@
+/* Write a program in which the user enters an integer value. Depending on the
+ * input the program will output wheater the number is was greater than zero, 
+ * less then zero or euql to zero */
+ 
+import java.util.Scanner;  // Import the Scanner class for input
+public class Zero {
+    public static void main (String[] args) // main
+    {
+        Scanner intInput = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int theInteger = intInput.nextInt();
+        
+        if(theInteger == 0) // check if the input number is 0
+        {
+            System.out.println("The number is 0!");
+        }
+        else if (theInteger < 0) // check if the number is greater than 0
+        {
+            System.out.println("Negative number!");
+        }
+        else
+        {
+            System.out.println("Positive number!");
+        }
+    }
+}
