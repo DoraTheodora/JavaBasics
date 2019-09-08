@@ -1,4 +1,4 @@
-/*A Stack is data structure that allows data manipulation only at one end, called TOP 
+/* A Stack is data structure that allows data manipulation only at one end, called TOP 
  * A Stack is LIFO structure, meaning LAST IN, FIRST OUT: the last elment added to 
  * the strucure, is the first one that will be removed. Alements cannot be added or 
  * removed from any other position that the TOP.*/
