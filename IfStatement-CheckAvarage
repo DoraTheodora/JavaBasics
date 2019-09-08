@@ -1,0 +1,44 @@
+/* Write a program where the user enters 3 exam marks. Programming,
+ * Maths, and Hardware. This program will then calculate their avarage 
+ * amrk and indicate whether the avarage mark is a:
+        - Distinction -> 70 -100
+        - Merit 1 -> 63 - 69
+        - Merit 2 -> 55 - 62
+        - Pass -> 40 - 54
+        - Fail -> less then 40 */
+ 
+import java.util.Scanner;  // Import the Scanner class for input
+public class Avarage {
+    public static void main (String[] args)
+    {
+        Scanner mark = new Scanner(System.in);
+        int sum = 0;
+
+        
+        for(int i = 0; i < 3; i++)
+        {
+            System.out.print("Insert mark: ");
+            int theMark = mark.nextInt();
+            sum += theMark;
+        }
+        double avarage = sum/3;
+        
+        System.out.println("Your avarge is: " + avarage);
+        
+        if(avarage < 40 && avarage >=0 )
+            System.out.println("You failed!");
+        else if(avarage >= 40 && avarage <=54)
+            System.out.println("Pass");
+        else if(avarage >= 55 && avarage <= 62)
+            System.out.println("Merit 2");
+        else if(avarage >= 63 && avarage <= 69)
+            System.out.println("Merit 1");
+        else if(avarage >= 70 && avarage <= 100)
+            System.out.println("Distinction");
+        else
+            System.out.println("Not in range!");
+
+        
+    }
+
+}
