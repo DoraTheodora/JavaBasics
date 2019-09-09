@@ -1,0 +1,23 @@
+/* Write a program which asks for input until 0 is entered.
+ * The program will add all the numbers enetered.*/
+ 
+import java.util.Scanner;  // Import the Scanner class for input
+public class DoWhile {
+    public static void main (String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        int sum = 0;    // assign initial value
+        int number = 0; // assign initial value
+        
+        do // this will run at least once.
+        {
+            System.out.print("Enter a number: ");
+            number = input.nextInt();
+            sum += number;
+        }
+        while(number != 0); // until the user inputs the number 0
+        
+        System.out.println("The sum of the input number is: " + sum);
+    }
+       
+}
