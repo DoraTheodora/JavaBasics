@@ -1,0 +1,21 @@
+/* Write a program which asks the user for 2 numbers, first number being the number
+ * resised at the power of the second.*/
+ 
+import java.util.Scanner;  // Import the Scanner class for input
+public class Power {
+    public static void main (String[] args)
+    {
+        Scanner number = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        int number1 = number.nextInt();
+        System.out.print("Enter second number: ");
+        int number2 = number.nextInt();
+        int powerResult = number1;
+        
+        for(int i = number2; i > 1; i--) // the loop will iterate the number of the second number -1 
+            powerResult *= number1;
+            
+        System.out.println(number1 + "^" +  number2 + " = " + powerResult);
+    }
+
+}
